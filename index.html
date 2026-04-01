@@ -1,51 +1,45 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AM Service - Mecânica Automotiva</title>
-    <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
-        header { background: #1a1a1a; color: #fff; padding: 2rem; text-align: center; border-bottom: 5px solid #d32f2f; }
-        .container { max-width: 800px; margin: 2rem auto; padding: 1rem; background: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.1); border-radius: 8px; }
-        h1 { margin: 0; color: #fff; }
-        h2 { color: #d32f2f; border-bottom: 2px solid #eee; padding-bottom: 10px; }
-        ul { list-style: none; padding: 0; }
-        li { padding: 10px 0; border-bottom: 1px solid #eee; }
-        .botao-zap { display: block; background: #25d366; color: white; text-align: center; padding: 15px; text-decoration: none; font-weight: bold; border-radius: 5px; margin-top: 20px; }
-        footer { text-align: center; padding: 2rem; font-size: 0.9em; color: #777; }
-    </style>
-</head>
-<body>
+<!-- Fonte "Pacifico" para letra cursiva grossa e "Montserrat" para o texto -->
+<link href="https://googleapis.com" rel="stylesheet">
+
+<style>
+    header {
+        background-color: #000000; /* Fundo preto total para destacar o vermelho */
+        padding: 60px 20px;
+        text-align: center;
+        border-bottom: 5px solid #ff0000; /* Linha vermelha grossa na base */
+    }
+
+    /* Nome AM Service: Cursiva, Grossa e Vermelha */
+    .nome-logo {
+        font-family: 'Pacifico', cursive;
+        font-size: 5rem;    /* Tamanho grande e chamativo */
+        color: #ff0000;    /* Vermelho puro e vibrante */
+        margin: 0;
+        text-shadow: 3px 3px 0px #ffffff, 6px 6px 0px rgba(0,0,0,0.2); /* Sombra branca para "saltar" da tela */
+        line-height: 1.2;
+    }
+    
+    .subtitulo {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.3rem;
+        color: #ffffff;
+        margin-top: 15px;
+        font-weight: 700;
+        text-transform: uppercase; /* Letras maiúsculas para o subtítulo */
+        letter-spacing: 2px;
+    }
+
+    .localizacao {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.1rem;
+        color: #ff0000; /* Localização em vermelho também */
+        margin-top: 10px;
+        font-weight: 400;
+    }
+</style>
 
 <header>
-    <h1>AM SERVICE</h1>
-    <p>Mecânica Automotiva Especializada - Arley Marcelo</p>
+    <h1 class="nome-logo">AM Service</h1>
+    <p class="subtitulo">Mecânica Automotiva Especializada</p>
+    <p class="localizacao">📍 Curitiba - PR | Arley Marcelo</p>
 </header>
-
-<div class="container">
-    <h2>Nossos Serviços</h2>
-    <ul>
-        <li>✅ Manutenção Preventiva e Corretiva</li>
-        <li>✅ Injeção Eletrônica e Diagnóstico</li>
-        <li>✅ Suspensão e Freios</li>
-        <li>✅ Revisão de Motores</li>
-        <li>✅ Troca de Óleo e Filtros</li>
-    </ul>
-
-    <h2>Sobre Nós</h2>
-    <p>Profissional com experiência em diagnóstico automotivo, oferecendo soluções rápidas e honestas para o seu veículo.</p>
-
-    <h2>Contato</h2>
-    <p>📍 Santana, São Paulo - SP</p>
-    <p>📞 (Seu Telefone Aqui)</p>
-
-    <a href="https://wa.me" class="botao-zap" target="_blank">CHAMAR NO WHATSAPP</a>
-</div>
-
-<footer>
-    &copy; 2026 AM Service - Todos os direitos reservados.
-</footer>
-
-</body>
-</html>
