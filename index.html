@@ -1,45 +1,83 @@
-<!-- Fonte "Pacifico" para letra cursiva grossa e "Montserrat" para o texto -->
-<link href="https://googleapis.com" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AM Service - Mecânica Automotiva em Curitiba</title>
+    <!-- Fontes: Pacifico (Cursiva Grossa) e Montserrat (Moderna) -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="https://bootstrapcdn.com">
+    <style>
+        body { font-family: 'Montserrat', sans-serif; margin: 0; background-color: #f4f4f4; color: #333; line-height: 1.6; }
+        
+        header {
+            background-color: #000000;
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 5px solid #ff0000;
+        }
 
-<style>
-    header {
-        background-color: #000000; /* Fundo preto total para destacar o vermelho */
-        padding: 60px 20px;
-        text-align: center;
-        border-bottom: 5px solid #ff0000; /* Linha vermelha grossa na base */
-    }
+        .nome-logo {
+            font-family: 'Pacifico', cursive;
+            font-size: 5rem;
+            color: #ff0000;
+            margin: 0;
+            text-shadow: 3px 3px 0px #ffffff;
+            line-height: 1.2;
+        }
 
-    /* Nome AM Service: Cursiva, Grossa e Vermelha */
-    .nome-logo {
-        font-family: 'Pacifico', cursive;
-        font-size: 5rem;    /* Tamanho grande e chamativo */
-        color: #ff0000;    /* Vermelho puro e vibrante */
-        margin: 0;
-        text-shadow: 3px 3px 0px #ffffff, 6px 6px 0px rgba(0,0,0,0.2); /* Sombra branca para "saltar" da tela */
-        line-height: 1.2;
-    }
-    
-    .subtitulo {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 1.3rem;
-        color: #ffffff;
-        margin-top: 15px;
-        font-weight: 700;
-        text-transform: uppercase; /* Letras maiúsculas para o subtítulo */
-        letter-spacing: 2px;
-    }
+        .subtitulo { color: #ffffff; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin-top: 15px; }
+        .localizacao { color: #ff0000; font-size: 1.1rem; margin-top: 10px; }
 
-    .localizacao {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 1.1rem;
-        color: #ff0000; /* Localização em vermelho também */
-        margin-top: 10px;
-        font-weight: 400;
-    }
-</style>
+        .container { max-width: 900px; margin: 30px auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        h2 { color: #ff0000; border-left: 5px solid #ff0000; padding-left: 15px; text-transform: uppercase; }
+        
+        .servicos { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px; }
+        .servico-item { background: #f9f9f9; padding: 15px; border-radius: 5px; border-bottom: 2px solid #ddd; }
+        .servico-item strong { color: #000; display: block; margin-bottom: 5px; }
+
+        footer { text-align: center; padding: 40px; background: #1a1a1a; color: #fff; margin-top: 40px; }
+
+        /* Botão WhatsApp */
+        .btn-whatsapp {
+            position: fixed; width: 60px; height: 60px; bottom: 40px; right: 40px;
+            background-color: #25d366; color: #FFF; border-radius: 50px;
+            text-align: center; font-size: 35px; box-shadow: 2px 2px 3px #999; z-index: 1000;
+        }
+        .btn-whatsapp i { margin-top: 13px; }
+    </style>
+</head>
+<body>
 
 <header>
     <h1 class="nome-logo">AM Service</h1>
     <p class="subtitulo">Mecânica Automotiva Especializada</p>
     <p class="localizacao">📍 Curitiba - PR | Arley Marcelo</p>
 </header>
+
+<div class="container">
+    <h2>Nossos Serviços</h2>
+    <div class="servicos">
+        <div class="servico-item"><strong>Injeção Eletrônica</strong> Diagnóstico preciso e limpeza de bicos.</div>
+        <div class="servico-item"><strong>Suspensão e Freios</strong> Revisão de amortecedores, discos e pastilhas.</div>
+        <div class="servico-item"><strong>Mecânica Geral</strong> Motores, correias, embreagem e troca de óleo.</div>
+        <div class="servico-item"><strong>Revisão Preventiva</strong> Tudo pronto para sua viagem com segurança.</div>
+    </div>
+
+    <h2 style="margin-top:40px;">Sobre Nós</h2>
+    <p>A <strong>AM Service</strong> é referência em Curitiba para quem busca confiança e qualidade. Sob o comando de Arley Marcelo, cuidamos do seu veículo com a tecnologia e a atenção que ele merece.</p>
+</div>
+
+<footer>
+    <p>&copy; 2026 AM Service - Todos os direitos reservados.</p>
+    <p>Rua de Curitiba, PR | Contato: (41) 99992-9417</p>
+</footer>
+
+<!-- Botão flutuante do WhatsApp -->
+<a href="https://wa.me!" 
+   class="btn-whatsapp" target="_blank">
+    <i class="fa fa-whatsapp"></i>
+</a>
+
+</body>
+</html>
